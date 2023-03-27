@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+
+    background:  hsl(216, 12%, 8%);
+    color: white;
+
+    font-family: 'Overpass', sans-serif;
+}
+
+/* Container do conteúdo */
+
+#container{
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+
+    background-color:  hsl(213, 19%, 18%);
+
+    border-radius: 25px;
+}
+
+/* Componente com display flex */
+
+#component-principal {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+/* Estilização da estrela svg*/
+.star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+    background-color: hsla(216, 12%, 54%, .1);
+
+    border-radius: 50%;
+}
+
+/* Estilização da descrição do componente */
+
+.component-title{
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.component-paragraph{
+    color: hsl(216, 12%, 54%);
+    font-size: 15px;
+}
+
+/* Estilização dos botões de avaliação */
+
+.component-avaliation{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 20px 0;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    width: 50px;
+    height: 50px;
+
+    background-color: hsla(216, 12%, 54%, .1);
+    color: hsla(217, 12%, 63%, .8);
+
+    border: none;
+    border-radius: 50%;
+
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
+    cursor: pointer;
+}
+
+.button:hover{
+    color: white;
+    background-color:hsl(217, 12%, 63%);
+}
+
+/* Estilização do botão de submit */
+
+.submit {
+    padding: 13px 0;
+
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 3px;
+
+    border: none;
+    border-radius: 40px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+.submit:hover{
+    color:hsl(25, 97%, 53%);
+    background-color: white;
+}
+
+/* Estilizando a tela de "thank you" */
+
+#component-thank-you{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.your-avaliation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 50px;
+    padding: 5px 14px;
+
+    background-color:hsla(217, 12%, 63%, .1);
+  
+    color: hsl(25, 97%, 53%);
+    border-radius: 28px;
+
+}
+
+.svg {
+    animation: move 2.5s ease-in-out infinite;
+}
+
+@keyframes move {
+    0% {
+      transform: translateY(10px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+}
+  
+
+
+
+/* Classe active para usar com o  javascript */
+
+.active{
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+}
+
+.active:hover{
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+}
+
+
+/* Formatando Attribution */
+.attribution{
+    position: absolute;
+    bottom: 5%;
+}
+
+.attribution a{
+    color: hsl(25, 97%, 53%);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width:375px) {
+    #container{
+        width: 320px;
+        margin: 0 15px;
+        padding: 5px;
+    }
+    .attribution{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:350px) {
+    #container{
+        width: 300px;
+        margin: 0 10px;
+    }
+}
