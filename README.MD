@@ -11,4 +11,4 @@
 - O site é responsivo.
 - Boas práticas de SEO e acessibilidade.
 
-<a href="#" style="font-size:18px;" target="_blank">Clique aqui para ver o site</a>
+<a href="https://ryansoares7.github.io/interactive-rating-component/" style="font-size:18px;" target="_blank">Clique aqui para ver o site</a>
